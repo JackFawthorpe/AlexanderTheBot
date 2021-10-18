@@ -1,8 +1,8 @@
-Ancients,194,
-Italian,154,
-Islands,92,
-Greater Europe,398,
-Africa,76,
-Arabia,146,
-Americas,118,
-Asia,194,
+Ancients,194
+Italian,154
+Islands,92
+Greater Europe,398
+Africa,76
+Arabia,146
+Americas,118
+Asia,194
