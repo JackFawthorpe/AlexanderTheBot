@@ -1,17 +1,20 @@
 import flag_module
-
+import game
+import game_stats
 # Global Variables
-groups = []
+FLAGS = {}
+GROUPS = {}
 
-crate = None
+GROUP_INDEX = {
+
+}
 
 class Inventory:
     def __init__(self):
-        self.current_inventory = []
-        self.season_flags = []
-        self.current_flag_count = 0
+        self.current_inventory = {}
+        self.flag_count = 0
         self.score = 0
-        self.group_claims = [0] * len(groups)
+        self.group_claims = [0] * len(GROUPS)
 
     def __repr__(self):
         output = ""
@@ -21,118 +24,106 @@ class Inventory:
 
     def add_flag(self, new_flag, value=1):
         """Adds a Flag to the players inventory"""
-
-        global crate
-        value = int(value)
-        self.current_flag_count += value
-        self.score += crate.flagValues[new_flag]
-
-        if type(new_flag) == flag_module.Flag:
-            new_flag = new_flag.name
-
-        # Adds the flag to the season stats
-        check = False
-        for flag, amount in self.season_flags:
-            if new_flag == flag:
-                amount += value
-                check = True
-                break
-        if not check:
-            self.season_flags.append([new_flag, 1])
-
-        # Adds the flag to current inventory
-        for i in range(len(self.current_inventory)):
-            if new_flag == self.current_inventory[i][0]:
-                self.current_inventory[i][1] += value
-                return
-        self.current_inventory.append([new_flag, 1])
+        if new_flag not in self.current_inventory:
+            self.current_inventory[new_flag] = value
+        else:
+            self.current_inventory[new_flag] += value
+        self.flag_count += value
+        self.score += game.values_t[FLAGS[new_flag].rarity.upper()] * value
+        game_stats.add_to_current(new_flag)
 
     def claim(self, group):
-        check = 1
-        index = -1
-        for i in range(len(crate.groups)):
-            if group == crate.groups[i].name:
-                index = i
+
+        if group not in GROUPS:
+            return False
+
+        for flag in GROUPS[group]:
+            if flag.name not in self.current_inventory:
+                return False
+
+        for flag in GROUPS[group]:
+            self.remove_flag(flag.name, 1)
+
+        for i in range(len(CRATE.groups)):
+            if CRATE.groups[i].name == group:
+                print(CRATE.groups[i].score)
+                self.score += CRATE.groups[i].score
+                self.group_claims[i] += 1
                 break
-
-        if index == -1:
-            return False
-
-        output, outputList = self.getMissing()
-        if len(outputList[index]) != 0:
-            return False
-
-        for flag in groups[index].flags:
-          self.remove_flag(flag.name)
-
-        self.group_claims[index] += 1
         return True
 
-    def remove_flag(self, old_flag):
+    def remove_flag(self, old_flag, amount=1):
         """Removes players flag from inventory"""
-
-        self.current_flag_count -= 1
-
-        for i in range(len(self.current_inventory)):
-            if self.current_inventory[i][0] == old_flag:
-                self.current_inventory[i][1] -= 1
-                if self.current_inventory[i][1] == 0:
-                    self.current_inventory.pop(i)
-                return True
+        if old_flag in self.current_inventory:
+            if self.current_inventory[old_flag] < amount:
+                return False
+            self.current_inventory[old_flag] -= amount
+            if self.current_inventory[old_flag] == 0:
+                self.current_inventory.pop(old_flag)
+            self.flag_count -= amount
+            self.score -= game.values_t[FLAGS[old_flag].rarity.upper()]
+            return True
         return False
 
-    def getFlags(self):
-        output = "YOU HAVE:\n"
-        for group in groups:
-            output += f"{group.name}: \n"
-            for flag in group.flags:
-                for item in self.current_inventory:
-                    if item[0] == flag.name:
-                        output += f"     {item[0]}: {item[1]}\n"
+    def get_missing(self):
+        output = []
+        for group in GROUPS:
+            group_list = []
+            for flag in group:
+                if flag not in self.current_inventory:
+                    group_list.append(flag)
+            output.append(group_list)
         return output
 
-    def getMissing(self):
-        output = "MISSING:\n"
-        output_list = []
-        for group in groups:
-            group_list = []
-            output += f"{group.name}: "
-            for flag in group.flags:
-                has = False
-                for inv in self.current_inventory:
-                    if inv[0] == flag.name:
-                        has = True
-                        break
-                if not has:
-                    group_list.append(flag.name)
-                    output += f" {flag.name}"
+    def print_missing(self):
+        missing_list = self.get_missing()
+        output = ""
+        for group, flags in GROUPS.items():
+            output += f"{group}:\n"
+            for flag in flags:
+                if flag.name not in self.current_inventory:
+                    output += f"{flag.name}\n"
             output += "\n"
-            output_list.append(group_list)
-        return output, output_list
+        return output
 
-    def getScore(self):
+    def print_current(self):
+        amounts = ""
+        output = ""
+        for group, flags in GROUPS.items():
+            output += "\n\n"
+            amounts += "\n\n"
+            for flag in flags:
+                if flag.name in self.current_inventory:
+                    output += f"{flag.name}\n"
+                    amounts += f"{self.current_inventory[flag.name]}\n"
+        return output, amounts
+
+
+    def get_score(self):
         return self.score
 
-    def checkScore(self):
+    def check_score(self):
         self.score = 0
-        for flag in self.current_inventory:
-            self.score += crate.flagValues[flag[0]] * flag[1]
+        for flag, amount in self.current_inventory.items():
+            self.score += game.values_t[FLAGS[flag].rarity.upper()] * amount
+        for i in range(len(CRATE.groups)):
+            self.score += self.group_claims[i] * CRATE.groups[i].score
 
-        for i in range(len(groups)):
-            self.score += groups[i].score * self.group_claims[i]
 
-def inventory_init(input):
-    global crate
-    crate = input
-    global groups
-    for group in input.groups:
-        groups.append(group)
+def push_data(flags, groups, crate):
+    """Gets the main flag data and stores"""
+    global FLAGS
+    global GROUPS
+    global CRATE
+    FLAGS = flags
+    GROUPS = groups
+    CRATE = crate
 
 if __name__ == "__main__":
+    game.initialise()
     test = Inventory()
-    crate = flag_module.load_crate("testflag.txt")
-    inventory_init(crate)
+    crate = flag_module.load_game_data("testflag.txt")
     test.add_flag("Kazakhstan")
     test.add_flag("Kazakhstan")
-    output = test.getFlags()
-    print(output)
+    test.remove_flag("Kazakhstan")
+    print(test.print_missing())

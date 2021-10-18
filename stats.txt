@@ -1,0 +1,114 @@
+# Roll Data
+Roman Empire,0
+Macedonian Empire,0
+Athens,0
+Sparta,0
+Byzantine Empire,0
+Seleucid Empire,0
+Mauryan Empire,0
+Carthiginian Empire,0
+Western Roman Empire,0
+Venetian Republic,0
+Papal State,0
+Genoese Republic,0
+Kingdom of Two Sicilies,0
+Scotland,0
+Wales,1
+England,0
+Kingdom of Ireland,0
+United Tribes,0
+Kingdom of Hawaii,1
+Tokugawa Shogunate,0
+Kingdom of Kandy,1
+Austro-Hungarian Empire,0
+First French Empire,0
+Kalmar Union,0
+Second Bulgarian Empire,0
+Holy Roman Empire,0
+Prussia,0
+Polish-Lithuanian Commonwealth,1
+The Grand Duchy of Muscovy,1
+Kingdom of Wallachia,1
+German Empire,1
+Russian Empire,1
+Kingdom of Benin,1
+Mali Empire,1
+Kingdom of Lunda,1
+Kingdom of Ethiopia,1
+Songhai Empire,1
+Zanzibar Sultanate,1
+Kingdom of Jerusalem,1
+Mamluk Sultanate,1
+Ottoman Empire,1
+Omani Empire,1
+Kingdom of Hejaz and Nejd,1
+Kingdom of Iran,2
+The Union,2
+Empire of Brazil,1
+Gran Colombia,1
+Second Mexican Empire,1
+Spanish Empire,0
+Portuguese Empire,1
+Mongolian Empire,1
+Qing Empire,0
+Mughal Empire,0
+Kingdom of Thailand,0
+Ming Empire,0
+
+
+# Circulation Stats
+Roman Empire,0
+Macedonian Empire,0
+Athens,0
+Sparta,0
+Byzantine Empire,0
+Seleucid Empire,0
+Mauryan Empire,0
+Carthiginian Empire,0
+Western Roman Empire,0
+Venetian Republic,0
+Papal State,0
+Genoese Republic,0
+Kingdom of Two Sicilies,0
+Scotland,0
+Wales,1
+England,0
+Kingdom of Ireland,0
+United Tribes,0
+Kingdom of Hawaii,1
+Tokugawa Shogunate,0
+Kingdom of Kandy,1
+Austro-Hungarian Empire,0
+First French Empire,0
+Kalmar Union,0
+Second Bulgarian Empire,0
+Holy Roman Empire,0
+Prussia,0
+Polish-Lithuanian Commonwealth,1
+The Grand Duchy of Muscovy,1
+Kingdom of Wallachia,1
+German Empire,1
+Russian Empire,1
+Kingdom of Benin,1
+Mali Empire,1
+Kingdom of Lunda,1
+Kingdom of Ethiopia,1
+Songhai Empire,1
+Zanzibar Sultanate,1
+Kingdom of Jerusalem,1
+Mamluk Sultanate,1
+Ottoman Empire,1
+Omani Empire,1
+Kingdom of Hejaz and Nejd,1
+Kingdom of Iran,2
+The Union,2
+Empire of Brazil,1
+Gran Colombia,1
+Second Mexican Empire,1
+Spanish Empire,0
+Portuguese Empire,1
+Mongolian Empire,1
+Qing Empire,0
+Mughal Empire,0
+Kingdom of Thailand,0
+Ming Empire,0
