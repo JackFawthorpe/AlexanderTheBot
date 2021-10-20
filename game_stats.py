@@ -26,7 +26,7 @@ def remove_from_current(flag):
 
 def save_stats():
     """Saves the statistics into a file"""
-    file = open("stats.txt", "w")
+    file = open("/home/pi/AlexanderTheBot/stats.txt", "w")
     file.write("# Roll Data\n")
     for flag, amount in FLAG_ROLLS.items():
         file.write(f"{flag},{amount}\n")
@@ -41,7 +41,7 @@ def stats_init(flags):
     for name in flags:
         CURRENT_FLAGS[name] = 0
         FLAG_ROLLS[name] = 0
-    file = open("stats.txt")
+    file = open("/home/pi/AlexanderTheBot/stats.txt")
     lines = file.readlines()
     index = 1
     while lines[index][0] != "#":

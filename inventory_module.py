@@ -122,7 +122,7 @@ def push_data(flags, groups, crate):
 if __name__ == "__main__":
     game.initialise()
     test = Inventory()
-    crate = flag_module.load_game_data("testflag.txt")
+    crate = flag_module.load_game_data("/home/pi/AlexanderTheBot/testflag.txt")
     test.add_flag("Kazakhstan")
     test.add_flag("Kazakhstan")
     test.remove_flag("Kazakhstan")

@@ -1,6 +1,5 @@
 # Imports
 import os
-from dotenv import load_dotenv
 import discord
 from discord.ext import commands as commands
 from discord.ext import tasks
@@ -12,11 +11,10 @@ import inventory_module
 import game
 
 
-# Loads Dotenv File
-load_dotenv()
+DISCORD_TOKEN = "ODkyNzExMjIyMDE1ODQ0Mzky.YVQ4HQ.uLejQapSVGa-MMFwl3xrKlzhoY0"
+DISCORD_GUILD = "884549583764602921"
 
 # Discord Initialise
-DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 intents = discord.Intents.default()
 intents.members = True
 vc = None
@@ -31,7 +29,7 @@ next_drop = None
 @bot.command()  # The bot joins the discord
 async def join(ctx):
     discord.opus.load_opus(
-        "C:/Users/fawth/Desktop/Programming/Other/DiscordBot/venv/Lib/site-packages/discord/bin/libopus-0.x64.dll")
+        "/home/pi/AlexanderTheBot/libopus-0.x86.dll")
     channel = ctx.author.voice.channel
     global vc
     vc = await channel.connect()
@@ -44,7 +42,7 @@ async def fart(ctx):
     else:
         x = random.randint(1, 7)
         try:
-            vc.play(discord.FFmpegPCMAudio(f'C:/Users/fawth/Desktop/Programming/Other/DiscordBot/audio/fart{x}.mp4'))
+            vc.play(discord.FFmpegPCMAudio(f'/home/pi/AlexanderTheBot/audio/fart{x}.mp4'))
         except:
             await ctx.channel.send("Please wait until the current audio is finished")
 
@@ -65,6 +63,7 @@ async def entergame(ctx):
 @bot.command()  # Lets a user in the server back up the game data
 async def backup(ctx):
     game.save_data()
+    await ctx.channel.send("Successfully backed up the game")
 
 
 @tasks.loop(seconds=3600)  # Gives each player a new roll
@@ -73,10 +72,10 @@ async def crateDrop():
     global last_drop
     now = datetime.now()
     last_drop = now.strftime("%H:%M:%S")
-    now = datetime.now() + timedelta(hours=2)
+    now = datetime.now() + timedelta(hours=1)
     next_drop = now.strftime("%H:%M:%S")
     print("Players Gettin Moolah")
-    game.roll_drop(3)
+    game.roll_drop()
 
 
 @tasks.loop(seconds=60)  # Does an automatic back up
@@ -124,7 +123,7 @@ async def playerlist(ctx):
 
 @bot.command()  # Prints the Tierlist for the flags in the chat
 async def flaglist(ctx):
-    await ctx.channel.send(file=discord.File('flags/FlagList.PNG'))
+    await ctx.channel.send(file=discord.File('/home/pi/AlexanderTheBot/flags/FlagList.PNG'))
 
 
 @bot.command()  # A player can use one of their roll tokens to get a flag
@@ -149,8 +148,12 @@ async def bal(ctx):
 
 
 @bot.command()
-async def adddrops(ctx):
+async def morerolls(ctx):
+    if f"{ctx.author}" != "Roasted#3169":
+        ctx.channel.send("Bruh")
+        return
     game.roll_drop()
+    await ctx.channel.send("Successfully gave everyone rolls")
 
 
 @bot.command()
@@ -239,6 +242,17 @@ async def rollcount(ctx, amount):
         return
     game.change_rolls(amount)
     await ctx.channel.send(f"Users will now get {amount} rolls per hour")
+
+
+@bot.command()
+async def rolllimit(ctx, amount):
+    amount = int(amount)
+    if f"{ctx.author}" != "Roasted#3169":
+        await ctx.channel.send("Ahhh naughty naughty trying to cheat")
+        return
+    game.set_limit_rolls(amount)
+    await ctx.channel.send(f"Users will now have a max of {amount} rolls in their inventory")
+
 
 
 @bot.command()

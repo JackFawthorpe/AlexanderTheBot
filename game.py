@@ -6,13 +6,14 @@ import player_module
 import inventory_module
 import game_stats
 
-PLAYER_DATA = "player_data.txt"
-FLAG_DATA = "flag_data.txt"
+PLAYER_DATA = "/home/pi/AlexanderTheBot/player_data.txt"
+FLAG_DATA = "/home/pi/AlexanderTheBot/flag_data.txt"
 PLAYERS = {}
 CRATE = None
 FLAGS = {}
 GROUPS = {}
 ROLLS_PER_DROP = 3
+MAX_STORE = 10
 
 values_t = {
     "LEGENDARY": 60,
@@ -131,12 +132,16 @@ def change_rolls(roll_count):
     global ROLLS_PER_DROP
     ROLLS_PER_DROP = roll_count
 
+def set_limit_rolls(value):
+    global MAX_STORE
+    MAX_STORE = value
+    
 
-def roll_drop(amount=3):
+def roll_drop():
     """Gives every player 3 rolls"""
     for name, player in PLAYERS.items():
-        player.bal += amount
-        player.bal = min(player.bal, ROLLS_PER_DROP)
+        player.bal += ROLLS_PER_DROP
+        player.bal = min(player.bal, MAX_STORE)
 
 
 def zap_drop(amount=1):
@@ -217,7 +222,7 @@ def print_player_inventory(playerName):
 
 def save_data():
     """Backs up the player data"""
-    player_module.backup(PLAYERS, "player_data.txt")
+    player_module.backup(PLAYERS, "/home/pi/AlexanderTheBot/player_data.txt")
     game_stats.save_stats()
 
 

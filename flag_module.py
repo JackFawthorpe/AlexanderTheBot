@@ -79,7 +79,7 @@ class Crate:
 class Flag:
     def __init__(self, name, rarity, group):
         self.name = name
-        self.image = f"flags/{name}.png"
+        self.image = f"/home/pi/AlexanderTheBot/flags/{name}.png"
         self.rarity = rarity
         self.group = group
 
@@ -150,7 +150,7 @@ def load_game_data(filename):
     for flag_string in flags:
         flag_string = flag_string.split(",")
         crate.add_flag(Flag(flag_string[0], flag_string[1], flag_string[2]))
-    group_score_set("group_data.txt", crate)
+    group_score_set("/home/pi/AlexanderTheBot/group_data.txt", crate)
     return crate
 
 
@@ -178,4 +178,4 @@ def group_score_set(filename, crate):
 
 if __name__ == "__main__":
     crate = load_game_data("testflag.txt")
-    group_score_set("group_data.txt", crate)
+    group_score_set("/home/pi/AlexanderTheBot/group_data.txt", crate)
