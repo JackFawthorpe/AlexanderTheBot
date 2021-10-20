@@ -1,1 +1,96 @@
+19
+Roasted#3169
+6
+187
+{Kingdom of Hejaz and Nejd:2,Seleucid Empire:2,Kingdom of Two Sicilies:3,German Empire:2,Spanish Empire:1,Kingdom of Iran:1,Mauryan Empire:2,Kingdom of Wallachia:2,Kingdom of Lunda:1,Byzantine Empire:3,Kingdom of Ethiopia:1,Kingdom of Jerusalem:2,Western Roman Empire:2,Papal State:1,Omani Empire:2,Kingdom of Ireland:1,Mamluk Sultanate:1,Zanzibar Sultanate:3,Kingdom of Hawaii:2,Prussia:1,Athens:1,Ming Empire:1,Kingdom of Thailand:1,Gran Colombia:1,Second Mexican Empire:1,Empire of Brazil:1,Second Bulgarian Empire:1,}
+{0,0,0,0,0,0,0,0,}
+Franz_Joseph_ball#4514
+3
+187
+{Western Roman Empire:2,Kingdom of Hawaii:3,Scotland:3,Mamluk Sultanate:1,Kingdom of Wallachia:2,Omani Empire:2,German Empire:2,Kingdom of Iran:2,Gran Colombia:2,England:1,Byzantine Empire:2,Spanish Empire:1,Kingdom of Hejaz and Nejd:2,Empire of Brazil:2,Kingdom of Ireland:2,Kingdom of Lunda:3,Mauryan Empire:2,Kingdom of Kandy:3,Genoese Republic:1,Ming Empire:3,The Grand Duchy of Muscovy:1,Songhai Empire:1,Seleucid Empire:1,Russian Empire:2,Kingdom of Thailand:1,Mughal Empire:1,Kingdom of Ethiopia:1,Carthiginian Empire:1,}
+{0,0,0,0,0,0,0,0,}
+ObviousSasquatch#4837
 0
+192
+{Kingdom of Thailand:3,Carthiginian Empire:2,Athens:1,Mauryan Empire:2,Kingdom of Hejaz and Nejd:3,The Grand Duchy of Muscovy:4,Second Mexican Empire:1,Tokugawa Shogunate:1,Omani Empire:5,Kingdom of Hawaii:2,German Empire:2,Kingdom of Jerusalem:3,Russian Empire:2,Kingdom of Kandy:2,Wales:1,Scotland:2,Mamluk Sultanate:2,Kingdom of Lunda:2,Ming Empire:1,Western Roman Empire:1,Kingdom of Two Sicilies:1,Mali Empire:1,Byzantine Empire:1,Songhai Empire:2,Empire of Brazil:1,Mughal Empire:1,Sparta:1,}
+{0,0,0,0,0,0,0,0,}
+SatansHoe#0730
+0
+207
+{Byzantine Empire:2,The Grand Duchy of Muscovy:1,Scotland:3,Empire of Brazil:2,Mamluk Sultanate:2,Omani Empire:2,Kingdom of Hawaii:5,Kingdom of Iran:3,Kingdom of Ethiopia:1,England:1,United Tribes:2,Second Bulgarian Empire:1,Genoese Republic:1,Kingdom of Two Sicilies:1,Kingdom of Jerusalem:3,Kingdom of Ireland:1,Mughal Empire:1,The Union:1,Russian Empire:2,Ming Empire:1,Songhai Empire:2,Zanzibar Sultanate:1,German Empire:1,Kingdom of Wallachia:2,Western Roman Empire:2,Kingdom of Lunda:1,Mali Empire:1,Kingdom of Hejaz and Nejd:1,Polish-Lithuanian Commonwealth:1,Prussia:1,Portuguese Empire:1,Gran Colombia:2,}
+{0,0,0,0,0,0,0,0,}
+BeanJeans#8271
+3
+206
+{Western Roman Empire:1,Empire of Brazil:2,Mamluk Sultanate:1,Kingdom of Hawaii:2,Zanzibar Sultanate:2,Byzantine Empire:2,Kingdom of Ireland:1,The Union:2,Gran Colombia:4,Kingdom of Thailand:1,Omani Empire:1,Songhai Empire:1,Papal State:2,Kingdom of Kandy:2,Russian Empire:3,Carthiginian Empire:1,Scotland:3,Second Bulgarian Empire:2,Portuguese Empire:3,Kingdom of Hejaz and Nejd:2,Kingdom of Ethiopia:1,Athens:1,Ming Empire:2,Kingdom of Lunda:1,England:1,Kingdom of Jerusalem:1,Mughal Empire:1,Genoese Republic:1,Wales:1,The Grand Duchy of Muscovy:1,}
+{0,0,0,0,0,0,0,0,}
+DandyCat#3280
+0
+207
+{Omani Empire:2,Byzantine Empire:1,Kingdom of Kandy:2,Carthiginian Empire:5,Kingdom of Hejaz and Nejd:1,The Union:1,Seleucid Empire:3,Zanzibar Sultanate:4,Western Roman Empire:1,Kalmar Union:1,Kingdom of Iran:2,German Empire:3,Russian Empire:3,Mauryan Empire:2,Mali Empire:5,Kingdom of Lunda:1,Kingdom of Hawaii:1,Empire of Brazil:3,Wales:1,Kingdom of Ireland:2,Gran Colombia:2,United Tribes:1,Kingdom of Jerusalem:2,Mamluk Sultanate:1,Kingdom of Thailand:1,Genoese Republic:2,Scotland:1,Second Mexican Empire:1,}
+{0,0,0,0,0,0,0,0,}
+emmacansew#5849
+3
+243
+{Western Roman Empire:1,Kingdom of Jerusalem:1,Wales:1,Kingdom of Wallachia:4,Seleucid Empire:2,Gran Colombia:3,Mali Empire:1,Zanzibar Sultanate:3,Second Mexican Empire:1,Second Bulgarian Empire:1,Prussia:1,Kingdom of Hejaz and Nejd:1,Ming Empire:2,Empire of Brazil:2,The Grand Duchy of Muscovy:2,Songhai Empire:2,Mauryan Empire:2,German Empire:1,Kingdom of Two Sicilies:1,Carthiginian Empire:1,Genoese Republic:3,Kingdom of Kandy:1,Kingdom of Lunda:1,Scotland:1,Tokugawa Shogunate:1,Kingdom of Ireland:1,Spanish Empire:1,Omani Empire:1,Byzantine Empire:2,Roman Empire:1,}
+{0,0,0,0,0,0,0,0,}
+Dilloon#6693
+3
+101
+{Gran Colombia:1,Kingdom of Kandy:3,Kingdom of Iran:1,Kingdom of Hawaii:1,Ming Empire:1,Mauryan Empire:1,Scotland:2,Mamluk Sultanate:2,Kingdom of Lunda:1,Russian Empire:1,Kingdom of Wallachia:2,The Union:2,Seleucid Empire:1,Western Roman Empire:2,Wales:1,Kingdom of Ireland:1,Mali Empire:2,Polish-Lithuanian Commonwealth:1,The Grand Duchy of Muscovy:1,Genoese Republic:1,Zanzibar Sultanate:1,Byzantine Empire:1,}
+{0,0,0,0,0,0,0,0,}
+SkeletronFT#2457
+3
+155
+{Kingdom of Thailand:3,Empire of Brazil:3,Kingdom of Iran:2,Scotland:1,Holy Roman Empire:1,England:1,Seleucid Empire:2,Second Bulgarian Empire:1,Ming Empire:1,Mauryan Empire:2,Songhai Empire:2,Omani Empire:1,Wales:1,Kingdom of Ireland:2,Mali Empire:1,Byzantine Empire:1,Kingdom of Jerusalem:1,Genoese Republic:1,Papal State:1,Polish-Lithuanian Commonwealth:1,United Tribes:1,The Grand Duchy of Muscovy:1,Western Roman Empire:1,Kingdom of Hejaz and Nejd:1,}
+{0,0,0,0,0,0,0,0,}
+yamumgay#7331
+0
+228
+{Genoese Republic:3,Portuguese Empire:1,Songhai Empire:5,Kingdom of Ireland:2,Byzantine Empire:2,Western Roman Empire:3,Second Bulgarian Empire:3,The Grand Duchy of Muscovy:2,Mauryan Empire:5,German Empire:1,Kingdom of Kandy:3,Kingdom of Thailand:4,Ming Empire:5,Holy Roman Empire:1,Kingdom of Wallachia:2,Kingdom of Hejaz and Nejd:1,Kingdom of Lunda:1,Mali Empire:1,Carthiginian Empire:2,Empire of Brazil:1,Athens:1,Zanzibar Sultanate:2,Russian Empire:1,England:1,Kalmar Union:1,}
+{0,0,0,0,0,0,0,0,}
+NZKiwi#0001
+3
+163
+{Scotland:1,Kingdom of Thailand:2,Russian Empire:1,Gran Colombia:5,Wales:2,Ming Empire:3,Mamluk Sultanate:1,Prussia:1,Tokugawa Shogunate:1,Genoese Republic:2,Omani Empire:1,Carthiginian Empire:1,Kingdom of Ireland:1,Songhai Empire:1,England:1,Ottoman Empire:1,Kingdom of Jerusalem:1,Kingdom of Two Sicilies:1,}
+{0,0,0,0,0,0,0,0,}
+Top-Hat Meerkat#7348
+6
+91
+{Mamluk Sultanate:1,Kingdom of Lunda:4,Kingdom of Jerusalem:1,Zanzibar Sultanate:1,Kingdom of Iran:1,United Tribes:2,Kingdom of Wallachia:1,Kingdom of Ireland:2,Scotland:1,Tokugawa Shogunate:1,Second Bulgarian Empire:1,Carthiginian Empire:4,Empire of Brazil:1,Wales:1,Mali Empire:2,Kingdom of Hawaii:1,The Grand Duchy of Muscovy:1,}
+{0,0,0,0,0,0,0,0,}
+KaiserChief#3900
+6
+127
+{Empire of Brazil:1,Kingdom of Hejaz and Nejd:2,Kingdom of Thailand:2,Kingdom of Two Sicilies:1,Western Roman Empire:1,Mali Empire:1,Kingdom of Iran:3,Ming Empire:1,Kingdom of Ireland:3,Wales:1,Sparta:1,Mauryan Empire:1,Byzantine Empire:1,Kingdom of Hawaii:1,Kingdom of Wallachia:1,The Grand Duchy of Muscovy:1,Omani Empire:1,Portuguese Empire:1,Russian Empire:1,Genoese Republic:1,The Union:1,Carthiginian Empire:3,Kingdom of Jerusalem:1,}
+{0,0,0,0,0,0,0,0,}
+OGJ4KE#9284
+10
+65
+{Qing Empire:1,Kingdom of Jerusalem:1,Holy Roman Empire:1,Mamluk Sultanate:2,Kingdom of Iran:1,Scotland:2,United Tribes:1,}
+{0,0,0,0,0,0,0,0,}
+logan_mck#4659
+10
+6
+{Kingdom of Two Sicilies:1,Mamluk Sultanate:1,Scotland:1,}
+{0,0,0,0,0,0,0,0,}
+Waifu expert#4604
+3
+184
+{Portuguese Empire:1,Kingdom of Wallachia:2,Kingdom of Hawaii:5,Omani Empire:4,Byzantine Empire:3,Wales:1,German Empire:1,Zanzibar Sultanate:3,Kingdom of Two Sicilies:3,Scotland:1,Holy Roman Empire:1,Kingdom of Thailand:1,The Grand Duchy of Muscovy:3,Second Bulgarian Empire:1,Kingdom of Jerusalem:1,Kingdom of Hejaz and Nejd:2,Kingdom of Ireland:1,Western Roman Empire:2,Kingdom of Kandy:1,Mauryan Empire:1,Sparta:1,Athens:2,Mamluk Sultanate:1,The Union:1,Empire of Brazil:1,}
+{0,0,0,0,0,0,0,0,}
+Rimadontknow#5210
+0
+233
+{Kingdom of Ireland:1,Mamluk Sultanate:3,Empire of Brazil:2,Genoese Republic:2,Roman Empire:1,German Empire:1,Kingdom of Wallachia:2,Wales:1,Papal State:1,Carthiginian Empire:1,Kingdom of Two Sicilies:1,Mauryan Empire:1,Russian Empire:1,Prussia:1,Kingdom of Lunda:2,Athens:2,Western Roman Empire:1,Byzantine Empire:1,Holy Roman Empire:1,Kingdom of Hejaz and Nejd:1,Kingdom of Iran:1,Mali Empire:2,The Union:1,Macedonian Empire:1,Second Mexican Empire:1,}
+{0,0,0,0,0,0,0,0,}
+Shadowfax#9924
+9
+111
+{Seleucid Empire:2,Russian Empire:1,Kingdom of Lunda:1,Songhai Empire:2,Kingdom of Hejaz and Nejd:2,Kingdom of Kandy:1,Wales:1,German Empire:1,Byzantine Empire:1,Kingdom of Ireland:2,Carthiginian Empire:2,Kingdom of Wallachia:1,Ming Empire:1,Empire of Brazil:1,Mauryan Empire:1,Genoese Republic:4,The Grand Duchy of Muscovy:1,Kingdom of Thailand:1,Mughal Empire:1,Second Bulgarian Empire:1,Kingdom of Two Sicilies:1,}
+{0,0,0,0,0,0,0,0,}
+BazMcBup2#1797
+10
+65
+{Kingdom of Lunda:3,German Empire:1,Tokugawa Shogunate:1,Russian Empire:1,Seleucid Empire:1,Omani Empire:1,Byzantine Empire:1,Songhai Empire:1,Mughal Empire:1,Ming Empire:1,Mamluk Sultanate:1,Kingdom of Two Sicilies:1,The Union:1,Zanzibar Sultanate:1,Kingdom of Hawaii:1,}
+{0,0,0,0,0,0,0,0,}
