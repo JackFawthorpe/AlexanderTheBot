@@ -25,7 +25,6 @@ bot = commands.Bot(command_prefix="$", intents=intents)
 last_drop = None
 next_drop = None
 
-
 @bot.command()  # The bot joins the discord
 async def join(ctx):
     discord.opus.load_opus(
@@ -35,6 +34,7 @@ async def join(ctx):
     vc = await channel.connect()
 
 
+# Requested by my younger sibling (Look away please!)
 @bot.command()  # The bot makes a fart noise
 async def fart(ctx):
     if (vc == None):
